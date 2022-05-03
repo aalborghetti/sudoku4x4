@@ -1,1 +1,53 @@
-Test
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sudoku 4x4</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <h1>Sudoku 4x4</h1>
+            <div id="griglia">
+                <div id="a1" class="casella" onclick="setNumberA1()"></div>
+                <div id="a2" class="casella" onclick="setNumberA2()"></div>
+                <div id="a3" class="casella" onclick="setNumberA3()"></div>
+                <div id="a4" class="casella" onclick="setNumberA4()"></div>
+                <div id="b1" class="casella" onclick="setNumberB1()"></div>
+                <div id="b2" class="casella" onclick="setNumberB2()"></div>
+                <div id="b3" class="casella" onclick="setNumberB3()"></div>
+                <div id="b4" class="casella" onclick="setNumberB4()"></div>
+                <div id="c1" class="casella" onclick="setNumberC1()"></div>
+                <div id="c2" class="casella" onclick="setNumberC2()"></div>
+                <div id="c3" class="casella" onclick="setNumberC3()"></div>
+                <div id="c4" class="casella" onclick="setNumberC4()"></div>
+                <div id="d1" class="casella" onclick="setNumberD1()"></div>
+                <div id="d2" class="casella" onclick="setNumberD2()"></div>
+                <div id="d3" class="casella" onclick="setNumberD3()"></div>
+                <div id="d4" class="casella" onclick="setNumberD4()"></div>
+            </div>
+            <div id="scelta">
+                <div>
+                    <input type="radio" id="1" name="number" value="1"
+                           checked>
+                    <label for="1">1</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="2" name="number" value="2">
+                    <label for="2">2</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="3" name="number" value="3">
+                    <label for="3">3</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="4" name="number" value="4">
+                    <label for="4">4</label>
+                  </div>
+            </div>
+            <div id="menu">
+                <button id="new" onclick="newGame()">Nuovo</button>
+            </div>
+        </div>
+    </body>
+</html>

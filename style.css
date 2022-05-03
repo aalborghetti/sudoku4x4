@@ -1,0 +1,46 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+#griglia {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 215px;
+    height: 215px;
+}
+
+#scelta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.casella {
+    border: 1px solid black;
+    font-size: 45px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
+
+.casella:hover {
+    background-color: red;
+}
