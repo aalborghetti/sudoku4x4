@@ -7,24 +7,24 @@
     </head>
     <body>
         <div id="main">
-            <h1>Sudoku 4x4 Gitpod</h1>
+            <h1>Sudoku 4x4</h1>
             <div id="griglia">
-                <div id="a1" class="casella" onclick="setNumberA1()"></div>
-                <div id="a2" class="casella" onclick="setNumberA2()"></div>
-                <div id="a3" class="casella" onclick="setNumberA3()"></div>
-                <div id="a4" class="casella" onclick="setNumberA4()"></div>
-                <div id="b1" class="casella" onclick="setNumberB1()"></div>
-                <div id="b2" class="casella" onclick="setNumberB2()"></div>
-                <div id="b3" class="casella" onclick="setNumberB3()"></div>
-                <div id="b4" class="casella" onclick="setNumberB4()"></div>
-                <div id="c1" class="casella" onclick="setNumberC1()"></div>
-                <div id="c2" class="casella" onclick="setNumberC2()"></div>
-                <div id="c3" class="casella" onclick="setNumberC3()"></div>
-                <div id="c4" class="casella" onclick="setNumberC4()"></div>
-                <div id="d1" class="casella" onclick="setNumberD1()"></div>
-                <div id="d2" class="casella" onclick="setNumberD2()"></div>
-                <div id="d3" class="casella" onclick="setNumberD3()"></div>
-                <div id="d4" class="casella" onclick="setNumberD4()"></div>
+                <div id="11" class="casella" onclick="setNumber('1','1')"></div>
+                <div id="12" class="casella" onclick="setNumber('1','2')"></div>
+                <div id="13" class="casella" onclick="setNumber('1','3')"></div>
+                <div id="14" class="casella" onclick="setNumber('1','4')"></div>
+                <div id="21" class="casella" onclick="setNumber('2','1')"></div>
+                <div id="22" class="casella" onclick="setNumber('2','2')"></div>
+                <div id="23" class="casella" onclick="setNumber('2','3')"></div>
+                <div id="24" class="casella" onclick="setNumber('2','4')"></div>
+                <div id="31" class="casella" onclick="setNumber('3','1')"></div>
+                <div id="32" class="casella" onclick="setNumber('3','2')"></div>
+                <div id="33" class="casella" onclick="setNumber('3','3')"></div>
+                <div id="34" class="casella" onclick="setNumber('3','4')"></div>
+                <div id="41" class="casella" onclick="setNumber('4','1')"></div>
+                <div id="42" class="casella" onclick="setNumber('4','2')"></div>
+                <div id="43" class="casella" onclick="setNumber('4','3')"></div>
+                <div id="44" class="casella" onclick="setNumber('4','4')"></div>
             </div>
             <div id="scelta">
                 <div>
@@ -46,7 +46,8 @@
                   </div>
             </div>
             <div id="menu">
-                <button id="new" onclick="newGame()">Nuovo</button>
+                <button id="new" onclick="newGame()">Nuova Partita</button>
+                <button id="check" onclick="checkSolution()">Controlla Soluzione</button>
             </div>
         </div>
     </body>
