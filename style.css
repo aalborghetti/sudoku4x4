@@ -2,13 +2,17 @@
     padding: 0px;
     margin: 0px;
 }
+body {
+    font-size: 16px;
+}
 
 h1 {
     font-size: 45px;
 }
 
 #main {
-    width: 50%;
+    width: 100%;
+    max-width: 620px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -33,10 +37,10 @@ h1 {
 
 .casella {
     border: 1px solid black;
-    font-size: 90px;
+    font-size: 6rem;
     text-align: center;
-    width: 5vw;
-    height: 5vw;
+    width: 7rem;
+    height: 7rem;
     margin: 1px;
     min-width: 100px;
     min-height: 100px;
