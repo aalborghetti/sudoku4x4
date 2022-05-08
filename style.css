@@ -14,6 +14,7 @@ h1 {
 
 #container {
     width: 100%;
+    max-width: 920px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -30,14 +31,15 @@ h1 {
 }
 
 .square {
-    border: 1px solid #777;
-    margin: 1px;
+    float:left;
+    position: relative;
+    width: 23%;
+    padding-bottom : 23%;
+    border: 1px solid #1792D2;
+    border-radius: 5%;
+    margin: 0.5%;
     font-size: 5rem;
     text-align: center;
-    width: 20vw;
-    height: 20vw;
-    min-width: 100px;
-    min-height: 100px;
 }
 
 /* Stile radio button */
@@ -62,6 +64,7 @@ h1 {
       font-family: sans-serif, Arial;
       font-size: 3rem;
       text-align: center;
+      color:#1792D2;
       border: 2px solid #1792D2;
       border-radius: 10%;
       margin: 2rem 1rem;
@@ -75,7 +78,8 @@ h1 {
   }
 
   #select input[type="radio"]:checked + label {
-      background-color: #aaa;
+      color: #ddd;
+      background-color: #1792D2;
   }
 
 /* Stile menù */
