@@ -15,41 +15,137 @@
         <div id="container">
             <h1>Sudoku 4x4</h1>
             <div id="grid">
-                <div id="11" class="square" onclick="setNumber('1','1')"></div>
-                <div id="12" class="square" onclick="setNumber('1','2')"></div>
-                <div id="13" class="square" onclick="setNumber('1','3')"></div>
-                <div id="14" class="square" onclick="setNumber('1','4')"></div>
-                <div id="21" class="square" onclick="setNumber('2','1')"></div>
-                <div id="22" class="square" onclick="setNumber('2','2')"></div>
-                <div id="23" class="square" onclick="setNumber('2','3')"></div>
-                <div id="24" class="square" onclick="setNumber('2','4')"></div>
-                <div id="31" class="square" onclick="setNumber('3','1')"></div>
-                <div id="32" class="square" onclick="setNumber('3','2')"></div>
-                <div id="33" class="square" onclick="setNumber('3','3')"></div>
-                <div id="34" class="square" onclick="setNumber('3','4')"></div>
-                <div id="41" class="square" onclick="setNumber('4','1')"></div>
-                <div id="42" class="square" onclick="setNumber('4','2')"></div>
-                <div id="43" class="square" onclick="setNumber('4','3')"></div>
-                <div id="44" class="square" onclick="setNumber('4','4')"></div>
-            <div>
+              <div class="square" onclick="setNumber('1','1')">
+                <div class="content">
+                  <div class="table">
+                    <div id="11" class="table-cell numbers"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="square" onclick="setNumber('1','2')">
+                <div class="content">
+                  <div class="table">
+                    <div id="12" class="table-cell numbers"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="square" onclick="setNumber('1','3')">
+                <div class="content">
+                  <div class="table">
+                    <div id="13" class="table-cell numbers"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="square" onclick="setNumber('1','4')">
+                <div class="content">
+                  <div class="table">
+                    <div id="14" class="table-cell numbers"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="square" onclick="setNumber('2','1')">
+                <div class="content">
+                  <div class="table">
+                    <div id="21" class="table-cell numbers"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="square" onclick="setNumber('2','2')">
+                <div class="content">
+                  <div class="table">
+                    <div id="22" class="table-cell numbers"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="square" onclick="setNumber('2','3')">
+                <div class="content">
+                  <div class="table">
+                    <div id="23" class="table-cell numbers"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="square" onclick="setNumber('2','4')">
+                <div class="content">
+                  <div class="table">
+                    <div id="24" class="table-cell numbers"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="square" onclick="setNumber('3','1')">
+                <div class="content">
+                  <div class="table">
+                    <div id="31" class="table-cell numbers"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="square" onclick="setNumber('3','2')">
+                <div class="content">
+                  <div class="table">
+                    <div id="32" class="table-cell numbers"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="square" onclick="setNumber('3','3')">
+                <div class="content">
+                  <div class="table">
+                    <div id="33" class="table-cell numbers"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="square" onclick="setNumber('3','4')">
+                <div class="content">
+                  <div class="table">
+                    <div id="34" class="table-cell numbers"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="square" onclick="setNumber('4','1')">
+                <div class="content">
+                  <div class="table">
+                    <div id="41" class="table-cell numbers"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="square" onclick="setNumber('4','2')">
+                <div class="content">
+                  <div class="table">
+                    <div id="42" class="table-cell numbers"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="square" onclick="setNumber('4','3')">
+                <div class="content">
+                  <div class="table">
+                    <div id="43" class="table-cell numbers"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="square" onclick="setNumber('4','4')">
+                <div class="content">
+                  <div class="table">
+                    <div id="44" class="table-cell numbers"></div>
+                  </div>
+                </div>
+              </div>
+          <div>
             <div id="select">
+              <div>
+                  <input type="radio" id="1" name="number" value="1"
+                          checked>
+                  <label for="1">1</label>
+                </div>
                 <div>
-                    <input type="radio" id="1" name="number" value="1"
-                           checked>
-                    <label for="1">1</label>
-                  </div>
-                  <div>
-                    <input type="radio" id="2" name="number" value="2">
-                    <label for="2">2</label>
-                  </div>
-                  <div>
-                    <input type="radio" id="3" name="number" value="3">
-                    <label for="3">3</label>
-                  </div>
-                  <div>
-                    <input type="radio" id="4" name="number" value="4">
-                    <label for="4">4</label>
-                  </div>
+                  <input type="radio" id="2" name="number" value="2">
+                  <label for="2">2</label>
+                </div>
+                <div>
+                  <input type="radio" id="3" name="number" value="3">
+                  <label for="3">3</label>
+                </div>
+                <div>
+                  <input type="radio" id="4" name="number" value="4">
+                  <label for="4">4</label>
+                </div>
             </div>
             <div id="menu">
                 <button id="new" onclick="newGame()">Nuova Partita</button>
